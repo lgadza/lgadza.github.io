@@ -8,8 +8,9 @@ const Navigation = () => {
       <Container className="d-fl">
         <Navbar.Brand>LG</Navbar.Brand>
         <Nav className="me-auto">
-          <Nav.Link href="#home">My work</Nav.Link>
           <Nav.Link href="#pricing">About</Nav.Link>
+          <Nav.Link href="#pricing">Skills</Nav.Link>
+          <Nav.Link href="#home">My work</Nav.Link>
           <Nav.Link href="#features">Contact</Nav.Link>
         </Nav>
       </Container>

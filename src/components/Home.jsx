@@ -2,6 +2,8 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import About from "./About";
 import profileImg from "../img/IMG_1234.JPG";
 import Skills from "./Skills";
+import Projects from "./Projects";
+import Contact from "./Contact";
 
 const Home = () => {
   return (
@@ -30,6 +32,9 @@ const Home = () => {
       <Row>
         <Skills />
       </Row>
+      {/* <Row></Row> */}
+      <Projects />
+      <Contact />
     </Container>
   );
 };

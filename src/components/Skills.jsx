@@ -1,7 +1,7 @@
 import { Container, Row, Col, Card } from "react-bootstrap";
 const Skills = () => {
   return (
-    <Container className="mt-4 skills">
+    <Container className="mt-4 pb-5 skills">
       <Row className="d-flex justify-content-center">
         <h3 className="my-4">Skills </h3>
 

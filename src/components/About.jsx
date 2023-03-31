@@ -14,11 +14,11 @@ const About = () => {
           <p className="text-start mt-auto about-info">
             Fuelled by my unbridled passion for innovation and technology, I
             pour my heart and soul into building web experiences that leave
-            lasting impressions I am a Full Stack Developer based in Bialystok,
-            Poland. I am well-equipped to provide innovative and effective
-            solutions for web development. With my extensive technical knowledge
-            and commitment to delivering high-quality results, I am confident in
-            my ability to make a valuable contribution to any project or team.
+            lasting impressions I am well-equipped to provide innovative and
+            effective solutions for web development. With my extensive technical
+            knowledge and commitment to delivering high-quality results, I am
+            confident in my ability to make a valuable contribution to any
+            project or team.
           </p>
           {/* <div className="d-flex">
             <h6>Tech Stack</h6>
