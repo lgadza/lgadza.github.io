@@ -1,9 +1,92 @@
+:root {
+  --main-bg: rgb(17, 27, 33);
+  --bg-1: rgb(32, 44, 51);
+  --bg-2: rgb(42, 57, 66);
+
+  --textColor: rgb(233, 237, 227);
+  --blackAndWhite: black;
+  --bg-gradient: rgb(49, 76, 87);
+  --card-bg: rgb(42, 57, 66, 0.7);
+  --card-body-bg: rgb(42, 57, 66, 0.96);
+  --card-header-bg: rgb(29, 39, 46);
+}
 body {
   background-color: black;
 }
 .App {
   text-align: center;
 }
+
+.home-intro {
+  height: 100vh;
+  align-items: center;
+  background-color: rgb(32, 44, 51);
+  color: white;
+}
 .about {
-  margin-top: 70px;
+  text-align: center;
+  min-height: 30vh;
+  /* background-color: rgb(42, 57, 65); */
+  /* color: white; */
+}
+.about-info {
+  background-color: rgb(32, 44, 51);
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  height: 250px;
+}
+.img-profile {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0px 20px 19px black;
+}
+.img-about {
+  height: 250px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0px 20px 19px black;
+}
+.skills {
+  background-color: rgb(32, 44, 51);
+  color: white;
+}
+.card {
+  border: none;
+  box-sizing: border-box;
+  background-color: rgb(42, 57, 66, 0.7);
+  border-radius: 5px;
+  position: relative;
+  color: black;
+}
+.card::after,
+.card::before {
+  content: "";
+  position: absolute;
+  inset: -0.11rem;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    rgb(18, 186, 227),
+    rgb(31, 43, 49),
+    var(--bg-2),
+    rgb(31, 43, 49),
+    rgb(18, 186, 227)
+  ) !important;
+  border-radius: inherit;
+  animation: rotation 10s linear infinite;
+  z-index: -2 !important;
+}
+@keyframes rotation {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
+.card::after {
+  filter: blur(0.1rem);
 }

@@ -1,13 +1,13 @@
 import "./App.css";
 import Navigation from "./components/Navigation";
 import "bootstrap/dist/css/bootstrap.min.css";
-import About from "./components/About";
+import Home from "./components/Home";
 
 function App() {
   return (
     <div className="App">
       <Navigation />
-      <About />
+      <Home />
     </div>
   );
 }

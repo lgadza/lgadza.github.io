@@ -6,7 +6,7 @@ const Navigation = () => {
   return (
     <Navbar bg="dark" variant="dark" fixed="top">
       <Container className="d-fl">
-        <Navbar.Brand>Louis Gadza</Navbar.Brand>
+        <Navbar.Brand>LG</Navbar.Brand>
         <Nav className="me-auto">
           <Nav.Link href="#home">My work</Nav.Link>
           <Nav.Link href="#pricing">About</Nav.Link>
