@@ -27,7 +27,8 @@ const ProjectsPage = () => {
             <div className="text-start">
               <span>
                 <strong className="pr-1">Tech Used:</strong> React, Redux,
-                JavaScript, NodeJS, Express, MongoDB, Postman, Bootstrap, CSS,
+                JavaScript, NodeJS, Express, MongoDB,Express, Postman,
+                Bootstrap, CSS,
               </span>
             </div>
             <div className="text-start">
@@ -54,8 +55,13 @@ const ProjectsPage = () => {
               >
                 <Button className="mx-3">Source Code</Button>
               </a>
-
-              <Button>Demo Video</Button>
+              <a
+                href="https://www.loom.com/share/3a35f3ef876b4a9f87cb864a4627c85f"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button>Demo Video</Button>
+              </a>
             </div>
           </Card.Body>
         </Card>
@@ -95,7 +101,7 @@ const ProjectsPage = () => {
                 <Button className="mx-3">Source Code</Button>
               </a>
 
-              <Button>Demo Video</Button>
+              {/* <Button>Demo Video</Button> */}
             </div>
           </Card.Body>
         </Card>
