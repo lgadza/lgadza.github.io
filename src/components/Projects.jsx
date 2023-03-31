@@ -137,8 +137,6 @@ const ProjectsPage = () => {
               >
                 <Button className="mx-3">Source Code</Button>
               </a>
-
-              <Button>Demo Video</Button>
             </div>
           </Card.Body>
         </Card>
