@@ -62,7 +62,7 @@ body {
 .card {
   border: none;
   box-sizing: border-box;
-  background-color: rgb(42, 57, 66, 0.7) !important;
+  background-color: rgb(24, 29, 35) !important;
   border-radius: 5px;
   position: relative;
   min-height: 32vh !important;
@@ -72,34 +72,7 @@ body {
   background-color: var(--card-header-bg) !important;
   padding: 15px 0 !important;
 }
-.card::after,
-.card::before {
-  content: "";
-  position: absolute;
-  inset: -0.11rem;
-  background: conic-gradient(
-    from var(--gradient-angle),
-    rgb(18, 186, 227),
-    rgb(31, 43, 49),
-    var(--bg-2),
-    rgb(31, 43, 49),
-    rgb(18, 186, 227)
-  ) !important;
-  border-radius: inherit;
-  animation: rotation 10s linear infinite;
-  z-index: -2 !important;
-}
-@keyframes rotation {
-  0% {
-    --gradient-angle: 0deg;
-  }
-  100% {
-    --gradient-angle: 360deg;
-  }
-}
-.card::after {
-  filter: blur(0.1rem);
-}
+
 .card p {
   color: rgb(180, 180, 180);
   font-size: 0.8em;
