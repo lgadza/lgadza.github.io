@@ -1,5 +1,6 @@
 import React from "react";
 import "font-awesome/css/font-awesome.min.css";
+import ProjectsPage from "./Projects";
 
 const Menu = (props) => {
   return (
@@ -236,8 +237,8 @@ const Projects = (props) => {
           </p>
         </div>
         <div className="projects-wrapper">
-          <Project
-            title="Choropleth Map."
+          {/* <Project
+            title="Impulsgaming."
             img={
               "https://raw.githubusercontent.com/louisestevez/fcc-portfolio/master/src/Components/Projects/Images/ChoroplethMap.jpg"
             }
@@ -250,82 +251,8 @@ const Projects = (props) => {
               A choropleth map representing the educational attainment by county
               in the U.S.
             </p>
-          </Project>
-          <Project
-            title="Random Quoting Machine."
-            img={
-              "https://raw.githubusercontent.com/louisestevez/fcc-portfolio/master/src/Components/Projects/Images/QuotingMachine.jpg"
-            }
-            tech="js vue css"
-            link="https://codepen.io/louisestevez/full/bxgEyd/"
-            repo="https://github.com/louisestevez/random-quoting-machine"
-          >
-            <small>Built using VueJS, Axios and CSS + Bootstrap.</small>
-            <p>
-              A random quoting app which retrieves pictures and quotes from two
-              different APIs.
-            </p>
-          </Project>
-          <Project
-            title="Calculator."
-            img={
-              "https://raw.githubusercontent.com/louisestevez/fcc-portfolio/master/src/Components/Projects/Images/Calculator.jpg"
-            }
-            tech="js react css"
-            link="https://codepen.io/louisestevez/full/ERVONM/"
-            repo="https://github.com/louisestevez/the-calcoolator"
-          >
-            <small>Built using React and CSS.</small>
-            <p>
-              A project on which I built a virtual calculator with its usual
-              features.
-            </p>
-          </Project>
-          <Project
-            title="Pomodoro Timer."
-            img={
-              "https://raw.githubusercontent.com/louisestevez/fcc-portfolio/master/src/Components/Projects/Images/TomateTimer.jpg"
-            }
-            tech="js react css"
-            link="https://codepen.io/louisestevez/full/dqJGVa"
-            repo="https://github.com/louisestevez/tomate-time"
-          >
-            <small>Built using React, CSS and lots of SVG.</small>
-            <p>
-              A cute and animated Pomodoro clock to help the users improve their
-              productivity.
-            </p>
-          </Project>
-          <Project
-            title="TicTacToe Game."
-            img={
-              "https://raw.githubusercontent.com/louisestevez/fcc-portfolio/master/src/Components/Projects/Images/TicTacToe.jpg"
-            }
-            tech="js react css"
-            link="https://codepen.io/louisestevez/full/KRevzB/"
-            repo="https://github.com/louisestevez/TicTacToe"
-          >
-            <small>Built using React, CSS and SVG.</small>
-            <p>
-              A TicTacToe game with a basic AI algorithm made for the legacy
-              front-end projects on FreeCodeCamp.
-            </p>
-          </Project>
-          <Project
-            title="Twitch Clone."
-            img={
-              "https://raw.githubusercontent.com/louisestevez/fcc-portfolio/master/src/Components/Projects/Images/Twitch.jpg"
-            }
-            tech="js vue sass"
-            link="https://codepen.io/louisestevez/full/xjwVPq/"
-          >
-            {/* repo="https://github.com/louisestevez/TicTacToe"> */}
-            <small>Built using VueJS, Axios and Scss.</small>
-            <p>
-              Simple Twitch clone using the new Twitch Helix API and made for
-              the legacy front-end projects on FreeCodeCamp.
-            </p>
-          </Project>
+          </Project> */}
+          <ProjectsPage />
         </div>
       </div>
     </section>
@@ -342,17 +269,17 @@ const Contact = (props) => {
       <div className="container">
         <div className="heading-wrapper">
           <div className="heading">
-            <p className="title">Contact me?</p>
+            <p className="title">Contact me</p>
             <p className="separator" />
           </div>
         </div>
       </div>
-      <form id="contact-form" action="#">
+      {/* <form id="contact-form" action="#">
         <input placeholder="Name" name="name" type="text" required />
         <input placeholder="Email" name="email" type="email" required />
         <textarea placeholder="Message" type="text" name="message" />
         <input className="button" id="submit" value="Submit" type="submit" />
-      </form>
+      </form> */}
       <div>
         <SocialLinks />
       </div>
@@ -373,21 +300,44 @@ const SocialLinks = (props) => {
     <div className="social">
       <ul>
         <li>
-          <a target="_blank" class="facebook" href="#s">
+          <a class="google" href="mailto:siuolgadza@gmail.com">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a class="instagram" href="tel:+48794144892">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            rel="noreferrer"
+            class="facebook"
+            href="https://www.linkedin.com/in/louis-gadza-3565741b1/"
+            target="_blank"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </li>
+        {/* <li>
+          <a target="_blank" class="facebook" href="#sf">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
             <i class="fa fa-facebook" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a target="_blank" class="twitter" href="#sf">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <i class="fa fa-twitter" aria-hidden="true"></i>
           </a>
         </li>
         <li>
@@ -398,16 +348,7 @@ const SocialLinks = (props) => {
             <span></span>
             <i class="fa fa-instagram" aria-hidden="true"></i>
           </a>
-        </li>
-        <li>
-          <a target="_blank" class="google" href="#ff">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <i class="fa fa-google-plus" aria-hidden="true"></i>
-          </a>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

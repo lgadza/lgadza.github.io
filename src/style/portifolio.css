@@ -213,6 +213,7 @@ a:active {
 .social {
   padding: 1rem 0 0 0.5rem;
   display: block;
+  padding-top: 20%;
 }
 
 .social a {
