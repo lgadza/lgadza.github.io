@@ -1,4 +1,5 @@
 import React from "react";
+import "font-awesome/css/font-awesome.min.css";
 
 const Menu = (props) => {
   return (
@@ -27,7 +28,7 @@ const Menu = (props) => {
             </a>
           </li>
         </ul>
-        <SocialLinks />
+        {/* <SocialLinks /> */}
       </div>
     </div>
   );
@@ -346,6 +347,12 @@ const Contact = (props) => {
           </div>
         </div>
       </div>
+      <form id="contact-form" action="#">
+        <input placeholder="Name" name="name" type="text" required />
+        <input placeholder="Email" name="email" type="email" required />
+        <textarea placeholder="Message" type="text" name="message" />
+        <input className="button" id="submit" value="Submit" type="submit" />
+      </form>
       <div>
         <SocialLinks />
       </div>
