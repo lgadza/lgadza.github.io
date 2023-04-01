@@ -87,14 +87,14 @@ const ProjectsPage = () => {
 
             <div className="my-3">
               <a
-                href="https://codequiz-taupe.vercel.app/"
+                href="https://spotfy-clone-phi.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Button>See Live</Button>
               </a>
               <a
-                href="https://github.com/lgadza/fs-aug21-build-week-1"
+                href="https://github.com/lgadza/spotfy_clone"
                 target="_blank"
                 rel="noopener noreferrer"
               >
