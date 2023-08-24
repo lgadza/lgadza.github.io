@@ -42,7 +42,7 @@ const ProjectsPage = () => {
             </div>
             <div className="my-3">
               <a
-                href="https://impulsgaming.vercel.app/"
+                href="https://impulsgaming-f3w91qe5s-lgadza.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
